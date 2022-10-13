@@ -28,7 +28,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/scss/bootstrap.scss",
+              "src/assets/scss/app.core.scss",
+              "src/assets/scss/app.icons.scss",
+              "src/assets/scss/theme-demo.scss"
             ],
             "scripts": []
           },

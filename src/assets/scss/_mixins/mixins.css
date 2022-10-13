@@ -1,0 +1,55 @@
+/*---------------------------------------------------
+    SASS ELements (based on LESS Elements 0.9 http://lesselements.com)
+  -------------------------------- -------------------
+    LESS ELEMENTS made by Dmitry Fadeyev (http://fadeyev.net)
+    SASS port by Samuel Beek (http://samuelbeek.com)
+  ---------------------------------------------------*/
+/*------------------------
+    Usage
+
+  $color-white: hexToRGBString(#fff) => "255,255,255"
+  $color-white: hexToRGBString(rgb(255,255,255)) => "255,255,255"
+  $color-white: hexToRGBString(rgba(#fff,1)) => "255,255,255"
+
+------------------------*/
+/*------------------------
+    Usage
+
+    h1 {
+      font-size: rem(32);
+    }
+
+    OR:
+
+    h1 {
+      font-size: rem(32px);
+    }
+------------------------*/
+/*------------------------
+  FADE IN
+  e.g. @include fadeIn( 2s );
+------------------------*/
+/*------------------------
+mixin that calculates if text needs to be light or dark
+depending on the background color passed.
+
+From this W3C document: http://www.webmasterworld.com/r.cgi?f=88&d=9769&url=http://www.w3.org/TR/AERT#color-contrast
+
+usage:
+@include text-contrast($bgcolor)
+
+Color brightness is determined by the following formula:
+((Red value X 299) + (Green value X 587) + (Blue value X 114)) / 1000
+------------------------*/
+/*------------------------
+ color factory
+  eg: contrast-ink($contrastvalue)
+------------------------*/
+/*------------------------
+ color factory
+  eg: @include paint($blue-grey-50, bg-blue-grey-50);
+------------------------*/
+/* backface visibility */
+/* generate theme button */
+
+/*# sourceMappingURL=mixins.css.map */

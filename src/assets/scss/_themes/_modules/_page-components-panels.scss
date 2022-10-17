@@ -10,7 +10,7 @@
 
 		/* make panel header bigger */
 		.panel-hdr {
-			box-shadow: 0 0.125rem 0.125rem -0.0625rem  rgba(darken($primary-800, 10%), (10/100));	
+			box-shadow: 0 0.125rem 0.125rem -0.0625rem  rgba(darken($primary-800, 10%), calc(10/100));
 		}
 
 	}
@@ -115,10 +115,10 @@
 	.panel-hdr {
 		background: $white;
 		background-image: linear-gradient(to bottom,#f7f7f7, $white);
-		
+
 	}
 
-}	
+}
 
 @media only screen and ( max-width: 420px ){
 	/* making mobile spacing a little narrow */

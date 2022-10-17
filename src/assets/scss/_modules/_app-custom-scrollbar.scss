@@ -34,8 +34,8 @@ body:not(.mobile-detected).modal-open .modal {
     }
 }
 
-/* 
- * Left Panel custom scroll 
+/*
+ * Left Panel custom scroll
  */
 
 .page-sidebar .primary-nav::-webkit-scrollbar-track-piece {
@@ -47,8 +47,8 @@ body:not(.mobile-detected).modal-open .modal {
 }
 
 .page-sidebar .primary-nav::-webkit-scrollbar {
-    height: $modalScrollSize/2;
-    width: $modalScrollSize/2;
+    height: calc($modalScrollSize/2);
+    width: calc($modalScrollSize/2);
 }
 
 .page-sidebar .primary-nav:hover::-webkit-scrollbar-corner {

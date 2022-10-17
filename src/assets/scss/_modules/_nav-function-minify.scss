@@ -9,12 +9,12 @@
 		}
 
 		.page-sidebar {
-			
+
 			width: $nav-minify-width;
 			z-index: $depth-header + 1;
 
 			will-change: width;
-			
+
 			transition: $nav-hide-animate;
 
 			.page-logo {
@@ -26,7 +26,7 @@
 				.page-logo-link {
 					flex: none;
 				}
-							
+
 				.page-logo-text {
 					display: none;
 
@@ -37,25 +37,25 @@
 			}
 
 			.info-card {
-				height: $nav-width/3 + 0.3125rem;
+				height: calc($nav-width/3) + 0.3125rem;
 				width:100%;
-				padding: $header-height/3.4 0;
+				padding: calc($header-height/3.4) 0;
 				text-align:center;
-				overflow: hidden; 
+				overflow: hidden;
 
 				justify-content: center;
 
 				.profile-image + div {
 					position: absolute;
 				    top: 0;
-				    width: $nav-width/1.2;
-				    text-align: left; 
+				    width: calc($nav-width/1.2);
+				    text-align: left;
 				    display: none;
 				}
 			}
 
 			.primary-nav {
-				overflow: hidden; 
+				overflow: hidden;
 
 				.nav-title {
 					display: none;
@@ -64,7 +64,7 @@
 					margin:0;
 
 					li {
-						
+
 						&.active {
 							&.open > a:before {
 								content: '\f413';
@@ -102,13 +102,13 @@
 							padding-right: 0;
 
 							>[class*='fa-'],
-							>.#{$cust-icon-prefix} {	
+							>.#{$cust-icon-prefix} {
 								font-size: $nav-font-icon-size * 1.1;
 								margin: 0;
 							}
 
 							> .badge {
-								left: $nav-minify-width / 2;
+								left: calc($nav-minify-width / 2);
 							}
 
 							&:not(.livicon) > .badge:not(.clear-badge):first-child  {
@@ -116,11 +116,11 @@
 							}
 
 							> .nav-link-text {
-								display: none;	
+								display: none;
 								position:absolute;
 								text-align: left;
 								background: trasparent;
-								padding-left: $nav-minify-sub-width / 10;
+								padding-left: calc($nav-minify-sub-width / 10);
 								color: $white;
 								top: 0;
 							    left: $nav-minify-width + 1rem;
@@ -168,7 +168,7 @@
 
 									> a {
 
-										padding-left: $nav-minify-sub-width / 10;
+										padding-left: calc($nav-minify-sub-width / 10);
 										padding-top: 0.6rem;
 										padding-bottom: 0.6rem;
 
@@ -182,7 +182,7 @@
 										& + ul {
 											> li {
 												> a {
-													padding-left: $nav-minify-sub-width / 8;
+													padding-left: calc($nav-minify-sub-width / 8);
 													padding-top: 0.6rem;
 													padding-bottom: 0.6rem;
 												}
@@ -206,11 +206,11 @@
 						}
 					}
 				}
-				
+
 
 				&:hover {
 					overflow: visible;
-					
+
 					.nav-menu > li:hover {
 
 						> a {
@@ -276,8 +276,8 @@
 
 							}
 						}
-					} 
-					
+					}
+
 				}
 
 			}
@@ -340,7 +340,7 @@
 
 
 		}
-	
+
 
 	}
 

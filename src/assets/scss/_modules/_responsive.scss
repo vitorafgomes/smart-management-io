@@ -96,7 +96,7 @@ $grid-breakpoints: (
     background: $white;
 
     .page-header {
-      padding: 0 $grid-gutter-width-base/2;
+      padding: 0 calc($grid-gutter-width-base/2);
       width: 100%;
       border-bottom: 1px solid rgba($black, 0.09);
 
@@ -444,15 +444,15 @@ $grid-breakpoints: (
   .page-header {
 
     [data-toggle="dropdown"] + .dropdown-menu {
-      width: calc(100% - #{$grid-gutter-width-base / 1.5}) !important;
-      right: $grid-gutter-width-base / 3 !important;
+      width: (100% - #{calc($grid-gutter-width-base / 1.5)}) !important;
+      right: calc($grid-gutter-width-base / 3) !important;
     }
   }
 
   .page-header,
   .page-content {
-    padding-left: $grid-gutter-width-base/3 !important;
-    padding-right: $grid-gutter-width-base/3 !important;
+    padding-left: calc($grid-gutter-width-base/3) !important;
+    padding-right: calc($grid-gutter-width-base/3) !important;
   }
 
 

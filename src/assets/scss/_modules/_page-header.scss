@@ -65,7 +65,7 @@
 					content: " ";
 					width: 2.5rem;
 					height: 2.5rem;
-					top: ($header-height - 2.5rem ) /2;
+					top: calc(($header-height - 2.5rem ) /2);
 					z-index: -1;
 					left: 0.3125rem;
 					opacity: 1;

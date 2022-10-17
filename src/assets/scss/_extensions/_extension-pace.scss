@@ -46,16 +46,16 @@ body.mod-pace-custom {
 	    //right: unquote("calc( (100% - #{$nav-width}) / 2 )")
 	    height: $pace-incontent-height;
 	    border: 2px solid $white;
-	    width: $nav-width / 1.111;
+	    width: calc($nav-width / 1.111);
 	    background: $white;
-	    overflow: hidden; 
+	    overflow: hidden;
 
 		.pace-progress {
 		    box-sizing: border-box;
 
 		    @include translate3d (0, 0, 0);
 
-		    max-width: $nav-width / 1.111;
+		    max-width: calc($nav-width / 1.111);
 		    z-index: 2000;
 		    display: block;
 		    position: absolute;
@@ -80,7 +80,7 @@ body.mod-pace-custom {
 	}
 
 	.pace-inactive {
-	  display: none;  
+	  display: none;
 	}
 
 	&.pace-running {
@@ -97,7 +97,7 @@ body.mod-pace-custom {
 			}
 		}
 	}
-	
+
 	/*&.pace-done {
 		.page-content {
 			&:before{

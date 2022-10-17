@@ -130,14 +130,14 @@ $grid-breakpoints: (
     }
 
     .page-content {
-      padding: map-get($grid-gutter-widths, lg) $grid-gutter-width-base/2;
+      padding: map-get($grid-gutter-widths, lg) calc($grid-gutter-width-base/2);
       color: #222;
       font-size: $fs-base + 1;
 
       min-height: calc(100vh - #{$header-height + $footer-height});
 
       .breadcrumb > .breadcrumb-item {
-        max-width: $page-breadcrumb-maxwidth/2 - 20px;
+        max-width: calc($page-breadcrumb-maxwidth/2) - 20px;
       }
 
       .subheader {
